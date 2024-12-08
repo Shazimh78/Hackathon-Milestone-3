@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder  "" </h1>
+    <form id="resume-form">
+        <h2>Personal Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+
+        <h2>Education</h2>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" required>
+
+        <label for="university">University:</label>
+        <input type="text" id="university" required>
+
+        <label for="graduation">Graduation Year:</label>
+        <input type="number" id="graduation" required>
+
+        <h2>Skills</h2>
+        <input type="text" id="skills" placeholder="Comma-separated skills, e.g., JavaScript, HTML, CSS" required>
+
+        <h2>Work Experience</h2>
+        <textarea id="work-experience" placeholder="Describe your work experience here"></textarea>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <section id="resume-display">
+        <header>
+            <h1 id="display-name"></h1>
+            <p id="display-contact"></p>
+        </header>
+
+        <section id="display-education">
+            <h2>Education</h2>
+            <p id="display-degree"></p>
+        </section>
+
+        <section id="display-skills">
+            <h2>Skills</h2>
+            <ul id="display-skill-list"></ul>
+        </section>
+
+        <section id="display-work">
+            <h2>Work Experience</h2>
+            <p id="display-work-experience"></p>
+        </section>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
